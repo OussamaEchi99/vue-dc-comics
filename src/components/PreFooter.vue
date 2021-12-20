@@ -4,7 +4,8 @@
             <ul>
                 <li v-for="(link, index) in links" :key="index">
                     <a :href="link.url">
-                        <div>
+                        <div class="image">
+                            <!-- <img :src="require('../assets/img/buy-comics-' + link.image)" :alt="link.text + 'Logo'"> -->
                             <img :src="require('../assets/img/buy-comics-' + link.image)" alt="">
                         </div>
 
@@ -32,12 +33,12 @@ export default {
                 {
                     text: 'DC MERCHANDISE',
                     url: '#',
-                    image: 'dc-merchandise.png'
+                    image: 'merchandise.png'
                 },
                 {
                     text: 'SUBSCRIPTION',
                     url: '#',
-                    image: 'subscription.png'
+                    image: 'subscriptions.png'
                 },
                 {
                     text: 'COMIC SHOP LOCATOR',
@@ -61,5 +62,30 @@ export default {
 .pre_footer{
     height: 150px;
     background-color: $brand_primary_color;
+    .container{
+        height: 100%;
+        
+        ul{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+
+   img{
+        max-width: 50%;
+        display: flex;
+   }
 }
 </style>

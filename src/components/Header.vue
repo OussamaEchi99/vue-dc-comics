@@ -81,18 +81,17 @@ export default {
 <style lang="scss" scoped>
 @import '../style/variables';
 
-header{
-    height: 100px;
-}
-
 .container{
-    background-color: pink;
     display: flex;
     justify-content: space-between;
 }
 
 .image{
     margin: 20px 0;
+
+    img{
+        width: auto;
+    }
 }
 
 .nav{
@@ -100,14 +99,31 @@ header{
     ul{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
         height: 100%;
 
         li{
             margin: 0 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
 
             &.current {
-                color: $brand_primary_color;
+                border-bottom: 5px solid $brand_primary_color;
+                a{
+                    color: $brand_primary_color;
+                }
+            }
+
+            &:hover {
+                border-bottom: 5px solid $brand_primary_color;
+                a{
+                    color: $brand_primary_color;
+                }
+            }
+
+            a{
+                color: #464646;
             }
         }
     }
