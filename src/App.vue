@@ -3,9 +3,9 @@
     <Header/>
     
     <main>
-      <div class="container">
-        <h2>&#8249; Content goes here &#8249;-- </h2>
-      </div>
+      <Jumbotron/>
+
+      <ProductsList/>
     </main>
 
     <PreFooter/>
@@ -22,6 +22,8 @@ import Header from "./components/Header.vue";
 import PreFooter from "./components/PreFooter.vue";
 import Footer from "./components/Footer.vue";
 import LoginSocial from "./components/LoginSocial.vue";
+import Jumbotron from "./components/Jumbotron.vue";
+import ProductsList from "./components/ProductsList.vue";
 
 
 export default {
@@ -31,6 +33,8 @@ export default {
     PreFooter,
     Footer,
     LoginSocial,
+    Jumbotron,
+    ProductsList,
   },
 };
 </script>
@@ -39,12 +43,12 @@ export default {
 @import './style/General.scss';
 @import './style/Common.scss';
 
-main{
-  height: 100px;
-  display: flex;
-  align-items: center;
-  background-color: black;
-  color: white;
-}
+// main{
+//   height: 100px;
+//   display: flex;
+//   align-items: center;
+//   background-color: black;
+//   color: white;
+// }
 
 </style>
