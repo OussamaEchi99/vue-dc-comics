@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../style/variables';
+@import '../style/Variables';
 
 .container{
     display: flex;

@@ -99,7 +99,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../style/variables';
+@import '../style/Variables';
 
 .product_list{
     background-color: #1c1c1c;

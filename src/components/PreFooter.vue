@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../style/variables';
+@import '../style/Variables';
 
 .pre_footer{
     height: 150px;
